@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node bot.js",
-    "postinstall": "npx playwright install chromium"
+    "start": "node bot.js"
   },
   "keywords": [],
   "author": "",

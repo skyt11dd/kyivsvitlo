@@ -21,7 +21,6 @@ class DtekAPI {
         try {
             console.log("Initializing WAF bypass...");
             this.browser = await chromium.launch({ 
-                channel: 'msedge', 
                 headless: true, 
                 args: ['--disable-blink-features=AutomationControlled'], 
                 ignoreDefaultArgs: ['--enable-automation'] 

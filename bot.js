@@ -40,6 +40,7 @@ bot.on('text', async (ctx) => {
         if (streets.length === 0) {
             // Ensure API is loaded
             await dtek.init();
+            await dtek.fetchStreets();
             const streetsLoaded = dtek.searchStreets(query);
             if (streetsLoaded.length === 0) {
                 return ctx.reply("Вулицю не знайдено. Спробуйте іншу назву.");

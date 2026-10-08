@@ -69,9 +69,6 @@ class DtekAPI {
             console.log("Session acquired successfully");
             await page.close();
             
-            // Prefetch streets
-            await this.fetchStreets();
-            
         } catch (err) {
             console.error("DtekAPI init error:", err);
             this.initPromise = null;
